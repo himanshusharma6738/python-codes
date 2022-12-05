@@ -1,0 +1,120 @@
+#wap to traverse a  dictionary as per mentioned here
+'''d1={("65","k22SH"):[80,40,60],
+("65","k22HH"):[40,85,35],
+("63","k22SH"):[20,20,40]}
+for i,j in d1:
+    print((j+i),d1[i,j][1])
+    '''
+#write a program to read user define value and sort the contents of dictionary as per key
+'''data1=input("data1: ")
+data2=input("data2: ")
+l1=[int(x) for x in data1.split(",")]
+l2=[int(y) for y in data2.split(",") ]
+d1=dict(zip(l1,l2))
+l3=sorted(l1)
+for k in l3:
+    print(k,d1[k])
+    '''
+#write a program to print dictionary dict1 and dict2 with user givenvalues and pairs .print the dictionary 1 in sorted order andcreate a cpy of dictionary1 and
+# print the keys and values of it in sorted order. update the sorted dictionary 1 update the sorted dictionary with dictionary 2
+'''data1=input("data1: ")
+data2=input("data2: ")
+l1=[int(x) for x in data1.split(",")]
+l2=[int(y) for y in data2.split(",")]
+d1=dict(zip(l1,l2))
+data3=input("data3: ")
+data4=input("data4: ")
+l3=[int(z) for z in data3.split(",")]
+l4=[int(o) for o in data4.split(",")]
+d2=dict(zip(l3,l4))
+print(sorted(d1.items()))
+print(sorted(d1.keys()))
+print(sorted(d1.values()))
+print(d1.update(d2))
+print(d1.copy())'''
+#wap to create a class employee and the class is empty class create a set of attributes of an object of an
+#empty class set employee name to the set age is 40, then print the detaails
+'''class employee:
+    pass
+emp1=employee()
+emp1.name=input("enter name")
+emp1.age=40
+print("name is"+emp1.name+"age is"+str(emp1.age))'''
+#wap to define a class furniture with attribute type of furniture and price then print the values of these
+#attributes using model 1 method .
+'''class furniture:
+name = "chair"
+price = 1000
+def model1(self):
+print(self.name,self.price)
+o1=furniture()
+o1.model1()
+o2=furniture()
+o2.model1()'''
+#wrrite a program to define a class cl with constructor init then print the id of self .declare a object
+#also print the id of that object.
+'''class c1:
+    def __init__(self):
+        print("address of self",id(self))
+o1=c1=()
+print("address of object",id(o1))
+o2=c1()
+print("address of object",id(o2))'''
+#wap that uses the self variable in class method print the strings pass to the method defined as set name
+#with two arguments self,name . define other method get name with single argument getself. the name of class is
+#library read value of the name from user and pass that as argument to set name then print that value using get name function.
+'''class lib:
+    def setname(self,name):
+        self.name=name
+    def getname(self):
+        print("name of lib",self.name)
+l1=lib()
+k=input("enter name of lib:")
+l1.setname(k)
+l1.getname()
+l2=lib()
+l2.setname("central lab")
+l2.getname()'''
+#wap to creat a class with instance variable,registration number,name and marks also display the details with
+#disp function create a class examination with course code and sitting plan then create library , take a class
+#attribute issue a book against registration number then create a class d with instance variable research paper
+#and research value and inherit name and registration number from the class.
+'''class student_details:
+    def __init__(self):
+        self.name="Am"
+        self.registration=12216840
+        self.marks=60
+    def disp(self):
+        print(self.name,self.registration,self.marks)
+class exam(student_details):
+    coursecode=108
+    seatingplan="26-403"
+    def E1(self):
+        print(self.registration,self.coursecode,self.seatingplan)
+o1=exam()
+o1.E1()
+o1.disp()
+class library(student_details):
+    book="delhi is heaven"
+    def E2(self):
+        print(self.registration,self.book)
+o2=library()
+o2.E2()
+class D(student_details):
+    researchpaper="dopamine"
+    researchvalue=100
+    def E3(self):
+        print(self.name,self.registration,self.researchpaper,self.researchvalue)
+o3=D()
+o3.E3()'''
+#write program to find number of characters,words and line in the file.
+'''f =open("C:/Users/lenovo/Desktop")
+wordcount=linecount=charcount=()
+for i in f:
+    linecount+=1
+    wordcount+=len(l.split())
+    wordcount+=len(l.split())
+    charcount+=len(l)
+print("linecount",linecount)
+print("wordcount",wordcount)
+print("charcount",charcount)'''
